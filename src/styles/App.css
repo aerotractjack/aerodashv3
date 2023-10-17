@@ -1,0 +1,234 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #465a6d; 
+}
+
+.home-table-container {
+  display: flex;
+  border: 2px solid #292929; 
+  background: #858585;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: rgb(184, 90, 90) !important;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-left: 2px solid #000000;
+}
+
+body {
+  background-color: #465a6d; 
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  padding-top: 60px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.no-padding {
+  padding-top: 0;
+}
+
+.create-column,
+.view-column {
+  padding: 20px;
+}
+
+.button {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #B0C4DE; 
+  color: #2f4747; 
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.text-entry-button {
+  display: block;
+  background-color: #c9ab6a; 
+  color: #452f47; 
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.csv-entry-button {
+  display: block;
+  background-color: rgb(184, 90, 90); 
+  color: #292929; 
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #ffb351; 
+}
+
+.view-sidebar-button {
+  margin: 5px;
+}
+
+.active-view-sidebar-button {
+  margin: 5px;
+  background-color: #ffb351; 
+}
+
+.view-sidebar-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 280px;
+  background-color: #B0C4DE;
+  padding: 1px;
+  height: calc(100vh - 60px);
+  position: fixed;
+  top: 60px;
+  overflow-y: auto;
+}
+
+.view-sidebar-button,
+.active-view-sidebar-button {
+  white-space: nowrap;
+}
+
+.grid-card {
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #B0C4DE; 
+}
+
+.view-label-card {
+  margin-bottom: 10px;
+  background-color: #B0C4DE;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #292929;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #292929;
+  font-weight: bold;
+}
+
+.home-label-container {
+  background-color: #B0C4DE;
+}
+
+.home-label-card {
+  background-color: #B0C4DE;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.card {
+  margin-top: 50px;
+}
+
+.csv-modal {
+  background-color: #B0C4DE;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.csv-modal {
+  background-color: #B0C4DE;
+  border-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.csv-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+.csv-modal h2 {
+  color: #2f4747;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.csv-modal p {
+  color: #2f4747;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.csv-modal pre {
+  background-color: #858585;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.csv-modal input[type="file"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.csv-modal .button {
+  display: block;
+  margin: 0 auto;
+}
+
+.customFormGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2px;
+  padding-bottom: 2px;
+}
+
+/* If more space control is needed */
+.customFormGroup .form-label {
+  flex: 0 0 30%; /* occupy 30% of parent width */
+}
+.customFormGroup .form-control, 
+.customFormGroup .form-check {
+  flex: 1; /* occupy remaining space */
+}
