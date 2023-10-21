@@ -40,7 +40,7 @@ function Grid({ gridData, columnDefs, columnVisibility, colTypes, idCol, table, 
     }
   }, [columnVisibility, columnApi]);
 
-  const gridHeight = (gridData.length + 1) * 30 + 50;
+  const gridHeight = (gridData.length + 2) * 42 - 18;
 
   const defaultColDef = useMemo(() => {
     return {
@@ -80,7 +80,7 @@ function Grid({ gridData, columnDefs, columnVisibility, colTypes, idCol, table, 
       <div
         className="ag-theme-alpine"
         style={{
-          height: `${Math.min(gridHeight, 500)}px`,
+          height: `${gridHeight}px`,
           width: `${Math.min(window.innerWidth - 375, 2500)}px`
         }}
       >
@@ -90,7 +90,7 @@ function Grid({ gridData, columnDefs, columnVisibility, colTypes, idCol, table, 
           defaultColDef={defaultColDef}
           onGridReady={onGridReady}
           onRowDoubleClicked={onRowDoubleClicked}
-          domLayout='autoWidth'
+          domLayout='normal'
         />
       </div>
 
