@@ -225,7 +225,7 @@ function ViewData() {
     function buildGrid(key) {
         const data = rowData[key];
         return (
-            <Card className='grid-card' >
+            <Card className='grid-card' key={key}>
                 <Card.Body>
                     <Card.Title>{key}</Card.Title>
                     <Grid

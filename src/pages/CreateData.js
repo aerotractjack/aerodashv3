@@ -309,7 +309,7 @@ function CreateData() {
     );
 
     return (
-        <div class="modal-overlay" id="modal-overlay">
+        <div className="modal-overlay" id="modal-overlay">
         <div className="container">
             <Navbar />
             <div className="form-container">
